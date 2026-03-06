@@ -1,3 +1,11 @@
+## Before you start
+
+For the Weather API challenge, you will need an API key to make calls to the OpenWeatherMap API. Sometimes Open Weather takes a little while to activate the key, particularly when a bunch of students make keys from the same location 🙀 To avoid this problem, **share your API key with your buddy** to limit the number of keys needed.
+
+Let's request one now to avoid any delay later on! Make sure to write it down somewhere safe so you're ready for that challenge later 💪
+
+Go to [OpenWeatherMap API](https://home.openweathermap.org/) and create an account to get your API key. You should find it [here](https://home.openweathermap.org/api_keys). 
+
 ## Background & Objectives
 
 A quick challenge to warmup! Let's rehearse how to bind a DOM event to some action in JavaScript!

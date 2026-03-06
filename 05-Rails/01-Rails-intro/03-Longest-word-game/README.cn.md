@@ -12,7 +12,7 @@
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-longest-word-game --skip-active-storage --skip-action-mailbox
+rails new rails-longest-word-game --skip-active-storage --skip-action-mailbox --skip-ci
 cd rails-longest-word-game
 git add .
 git commit -m "rails new"

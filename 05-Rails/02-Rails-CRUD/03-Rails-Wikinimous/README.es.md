@@ -7,7 +7,7 @@ Aquí no hay `rake`. También recuerda no crear tu app Rails en `fullstack-chall
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-wikinimous --skip-active-storage --skip-action-mailbox
+rails new rails-wikinimous --skip-active-storage --skip-action-mailbox --skip-ci
 cd rails-wikinimous
 git add .
 git commit -m "rails new"

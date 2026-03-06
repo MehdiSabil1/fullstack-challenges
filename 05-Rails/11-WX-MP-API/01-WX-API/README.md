@@ -14,6 +14,7 @@ You are going to use the minimal template. Here is the setup you need:
 ```bash
 cd ~/code/<user.github_nickname>
 rails new \
+  --skip-ci \
   --database postgresql \
   --skip-action-mailbox \
   stories-api

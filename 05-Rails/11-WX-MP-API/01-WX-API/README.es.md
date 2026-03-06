@@ -14,6 +14,7 @@ Vas a usar la plantilla minimal. Aquí está la configuración que necesitas:
 ```bash
 cd ~/code/<user.github_nickname>
 rails new \
+  --skip-ci \
   --database postgresql \
   --skip-action-mailbox \
   stories-api

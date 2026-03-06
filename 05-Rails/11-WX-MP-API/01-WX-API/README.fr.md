@@ -14,6 +14,7 @@ Tu vas utiliser le modèle minimal. Voici la configuration dont tu as besoin :
 ```bash
 cd ~/code/<user.github_nickname>
 rails new \
+  --skip-ci \
   --database postgresql \
   --skip-action-mailbox \
   stories-api

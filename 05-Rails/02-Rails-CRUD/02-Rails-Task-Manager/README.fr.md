@@ -14,7 +14,7 @@ Tu n'utiliseras pas `rake` ici. Et ne crée pas ton application Rails dans `full
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-task-manager --skip-active-storage --skip-action-mailbox
+rails new rails-task-manager --skip-active-storage --skip-action-mailbox --skip-ci
 cd rails-task-manager
 git add .
 git commit -m "rails new"

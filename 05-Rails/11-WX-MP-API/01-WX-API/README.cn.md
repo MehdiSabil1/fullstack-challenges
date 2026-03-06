@@ -14,6 +14,7 @@
 ```bash
 cd ~/code/<user.github_nickname>
 rails new \
+  --skip-ci \
   --database postgresql \
   --skip-action-mailbox \
   stories-api

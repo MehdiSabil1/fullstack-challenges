@@ -1,3 +1,4 @@
+# rubocop:disable Style/OneClassPerFile
 # This is how you define your own custom exception classes
 class DepositError < StandardError
 end
@@ -56,3 +57,4 @@ class BankAccount
     # TODO: update the current balance (which represents the balance of the account)
   end
 end
+# rubocop:enable Style/OneClassPerFile

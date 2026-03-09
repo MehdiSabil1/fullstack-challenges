@@ -12,9 +12,14 @@ serve
 
 ### 获取你的API密钥 （你和你的伙伴需要1个）
 
-首先，去[OpenWeatherMap API](https://home.openweathermap.org/)并创建一个帐户来获取API密钥。你应该在[这里](https://home.openweathermap.org/api_keys)找到它。你们都将在同一时间创建帐户，这可能会在Open Weather激活钥匙过程中造成一些延迟。为避免此问题，**与你的伙伴共享API密钥**以限制要激活的密钥数量。
+你已经在第一个挑战中获取了API密钥了吗？如果是，太好了，让我们开始编程吧！
 
-你可以免费执行60次调用/分钟，这对于这个挑战来说应该足够了。
+<details>
+  <summary>还没有API密钥？</summary>
+    首先，去[OpenWeatherMap API](https://home.openweathermap.org/)并创建一个帐户来获取API密钥。你应该在[这里](https://home.openweathermap.org/api_keys)找到它。你们都将在同一时间创建帐户，这可能会在Open Weather激活钥匙过程中造成一些延迟。为避免此问题，**与你的伙伴共享API密钥**以限制要激活的密钥数量。
+</details>
+
+_你可以免费执行60次调用/分钟，这对于这个挑战来说应该足够了。_
 
 ### 实时天气
 

@@ -12,9 +12,14 @@ serve
 
 ### Get your API key (1 for you and your buddy)
 
-First, go to [OpenWeatherMap API](https://home.openweathermap.org/) and create an account to get your API key. You should find it [here](https://home.openweathermap.org/api_keys). Sometimes Open Weather takes a little while to activate the key, particularly when a bunch of students make keys from the same location 🙀 To avoid this problem, **share your API key with your buddy** to limit the number of keys needed.
+Did you already get your API key in the first challenge? If so, great, let's get coding!
 
-You are allowed to perform 60 calls / minute for free, which should be plenty enough for this challenge.
+<details>
+  <summary>Don't have an API key yet?</summary>
+    First, go to [OpenWeatherMap API](https://home.openweathermap.org/) and create an account to get your API key. You should find it [here](https://home.openweathermap.org/api_keys). Sometimes Open Weather takes a little while to activate the key, particularly when a bunch of students make keys from the same location 🙀 To avoid this problem, **share your API key with your buddy** to limit the number of keys needed.
+</details>
+
+_You are allowed to perform 60 calls / minute for free, which should be plenty enough for this challenge._
 
 ### Current weather
 

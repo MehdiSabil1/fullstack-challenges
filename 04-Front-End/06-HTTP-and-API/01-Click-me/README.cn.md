@@ -1,3 +1,11 @@
+## 开始之前
+
+在天气API挑战中，你需要一个API密钥来调用OpenWeatherMap API。有时候Open Weather需要一些时间来激活密钥，尤其是当很多学生从同一地点申请密钥时 🙀 为了避免这个问题，**与你的伙伴共享API密钥**以减少所需的密钥数量。
+
+让我们现在就申请一个，以避免之后的延误！确保把它记在安全的地方，这样你就能为那个挑战做好准备 💪
+
+前往[OpenWeatherMap API](https://home.openweathermap.org/)并创建一个账户以获取你的API密钥。你应该在[这里](https://home.openweathermap.org/api_keys)找到它。
+
 ## 背景和目标
 
 一个很快的热身练习！让我们来排练一下如何在JavaScript中将DOM事件绑定到某些操作上！

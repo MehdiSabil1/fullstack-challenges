@@ -14,9 +14,14 @@ Va à [`localhost:8000`](http://localhost:8000/) et ouvre ta console.
 
 ### Récupérer ta clé API (1 pour toi et ton buddy)
 
-Commence par aller sur le site de l'[API OpenWeatherMap](https://home.openweathermap.org) et crée un compte pour obtenir ta clé API. Tu devrais la trouver [ici](https://home.openweathermap.org/api_keys). Vous allez tous créer un compte en même temps, ce qui risque de retarder l'activation des clés par Open Weather. Pour éviter ce problème, **partage ta clé API avec ton buddy** pour limiter le nombre de clés à activer.
+Tu as déjà récupéré ta clé API dans le premier challenge ? Si oui, parfait, on va pouvoir coder !
 
-Tu as le droit de réaliser gratuitement 60 appels / minute, ce qui devrait largement suffire pour ce challenge.
+<details>
+  <summary>Tu n'as pas encore de clé API ?</summary>
+    Commence par aller sur le site de l'[API OpenWeatherMap](https://home.openweathermap.org) et crée un compte pour obtenir ta clé API. Tu devrais la trouver [ici](https://home.openweathermap.org/api_keys). Vous allez tous créer un compte en même temps, ce qui risque de retarder l'activation des clés par Open Weather. Pour éviter ce problème, **partage ta clé API avec ton buddy** pour limiter le nombre de clés à activer.
+</details>
+
+_Tu as le droit de réaliser gratuitement 60 appels / minute, ce qui devrait largement suffire pour ce challenge._
 
 ### Météo actuelle
 

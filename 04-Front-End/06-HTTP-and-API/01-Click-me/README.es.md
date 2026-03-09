@@ -1,3 +1,11 @@
+## Antes de empezar
+
+Para el ejercicio de la API del tiempo, necesitarás una clave API para hacer llamadas a la API OpenWeatherMap. A veces Open Weather tarda un poco en activar la clave, especialmente cuando muchos estudiantes crean claves desde el mismo lugar 🙀 Para evitar este problema, **comparte tu clave API con tu compañero/a (buddy)** para limitar el número de claves necesarias.
+
+¡Vamos a solicitarla ahora para evitar cualquier retraso más adelante! Asegúrate de anotarla en un lugar seguro para estar listo/a para ese ejercicio más tarde 💪
+
+Ve a [OpenWeatherMap API](https://home.openweathermap.org/) y crea una cuenta para obtener tu clave API. La puedes encontrar [aquí](https://home.openweathermap.org/api_keys).
+
 ## Contexto y Objetivos
 
 ¡Este es un desafío rápido para entrar en calor! Repasemos cómo enlazar un evento DOM a una acción en JavaScript!

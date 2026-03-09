@@ -1,3 +1,11 @@
+## Avant de commencer
+
+Pour le challenge sur l'API Météo, tu auras besoin d'une clé API pour faire des appels à l'API OpenWeatherMap. Parfois, Open Weather met un peu de temps à activer la clé, en particulier quand beaucoup d'étudiants créent des clés depuis le même endroit 🙀 Pour éviter ce problème, **partage ta clé API avec ton buddy** pour limiter le nombre de clés nécessaires.
+
+Faisons-en la demande maintenant pour éviter tout délai plus tard ! Note-la bien quelque part pour être prêt(e) pour ce challenge 💪
+
+Va sur [OpenWeatherMap API](https://home.openweathermap.org/) et crée un compte pour obtenir ta clé API. Tu devrais la trouver [ici](https://home.openweathermap.org/api_keys).
+
 ## Contexte et objectifs
 
 Dans ce petit challenge pour s'échauffer, on va revenir sur la façon de lier un événement du DOM à une action en JavaScript !

@@ -14,9 +14,14 @@ Ve a [`localhost:8000`](http://localhost:8000/) y abre la consola.
 
 ### Obten tu clave API (1 para ti y otra para tu compañero/a (buddy))
 
-Primero ve a la [API OpenWeatherMap](https://home.openweathermap.org/) y crea una cuenta para poder obtener tu clave API. La puedes encontrar [aquí](https://home.openweathermap.org/api_keys). Pueden haber algunas demoras en la activación de claves en Open Weather debido a que todos estarán creando cuentas al mismo tiempo. Para evitar este problema te recomendamos **compartir tu clave API con tu compañero/a (buddy)** y así reducir el número de claves.
+¿Ya conseguiste tu clave API en el primer ejercicio? Si es así, ¡genial, a programar!
 
-Tienes autorización para ejecutar 60 llamadas / minuto gratis lo que debe ser suficiente para este desafío.
+<details>
+  <summary>¿Aún no tienes una clave API?</summary>
+    Primero ve a la [API OpenWeatherMap](https://home.openweathermap.org/) y crea una cuenta para poder obtener tu clave API. La puedes encontrar [aquí](https://home.openweathermap.org/api_keys). Pueden haber algunas demoras en la activación de claves en Open Weather debido a que todos estarán creando cuentas al mismo tiempo. Para evitar este problema te recomendamos **compartir tu clave API con tu compañero/a (buddy)** y así reducir el número de claves.
+</details>
+
+_Tienes autorización para ejecutar 60 llamadas / minuto gratis lo que debe ser suficiente para este ejercicio._
 
 ### Current weather
 

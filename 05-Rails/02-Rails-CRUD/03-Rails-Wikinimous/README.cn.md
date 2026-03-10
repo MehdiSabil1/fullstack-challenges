@@ -34,7 +34,7 @@ Article.last        # => should be the one you just saved
 
 ### 2 - 初始化
 
-在`Gemfile`添加[`faker` gem](https://github.com/stympy/faker)并且运行`bundle install`。
+在`Gemfile`添加[`faker` gem](https://github.com/faker-ruby/faker)并且运行`bundle install`。
 
 在`db/seeds.rb`文件里使用这个gem生成10篇文章。代码完成之后，运行：
 

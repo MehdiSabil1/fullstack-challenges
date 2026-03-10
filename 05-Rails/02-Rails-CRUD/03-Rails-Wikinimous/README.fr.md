@@ -34,7 +34,7 @@ Article.last        # => should be the one you just saved
 
 ### 2 - Seed
 
-Ajoute la [gem `faker`](https://github.com/stympy/faker) à ton fichier `Gemfile` et exécute `bundle install`. Utilise cette gem pour générer 10 faux articles dans `db/seeds.rb`. Une fois que tu as ton code, tu peux exécuter :
+Ajoute la [gem `faker`](https://github.com/faker-ruby/faker) à ton fichier `Gemfile` et exécute `bundle install`. Utilise cette gem pour générer 10 faux articles dans `db/seeds.rb`. Une fois que tu as ton code, tu peux exécuter :
 
 ```bash
 rails db:seed

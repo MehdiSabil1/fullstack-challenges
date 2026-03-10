@@ -35,7 +35,7 @@ Article.last        # => should be the one you just saved
 
 ### 2 - Seed
 
-Agrega la [gema `faker`](https://github.com/stympy/faker) a tu `Gemfile` y corre `bundle install`. Usa esta gema para generar 10 artículos falsos en
+Agrega la [gema `faker`](https://github.com/faker-ruby/faker) a tu `Gemfile` y corre `bundle install`. Usa esta gema para generar 10 artículos falsos en
 `db/seeds.rb`. Cuando tu código esté listo, corre lo siguiente:
 
 ```bash

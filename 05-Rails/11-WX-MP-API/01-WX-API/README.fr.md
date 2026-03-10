@@ -51,7 +51,7 @@ Cela te permettra de commencer à créer les endpoints de l'API à afficher dans
 
 Dans le fichier `db/seeds.rb`, on va créer des stories avec des commentaires.
 
-Conseil : utilise la gem [Faker](https://github.com/stympy/faker/) pour épicer tes données 🌶️🌶️🌶️  Par exemple :
+Conseil : utilise la gem [Faker](https://github.com/faker-ruby/faker/) pour épicer tes données 🌶️🌶️🌶️  Par exemple :
 
 ```ruby
 Faker::TvShows::GameOfThrones.character #=> "Tyrion Lannister"

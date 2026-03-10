@@ -50,7 +50,7 @@ git push origin master
 
 在 `db/seeds.rb` 文件, 让我们创建一些带有注释的故事。
 
-提示：使用[Faker](https://github.com/stympy/faker/) gem 来让你的数据更辣一点 🌶️🌶️🌶️  比方说:
+提示：使用[Faker](https://github.com/faker-ruby/faker/) gem 来让你的数据更辣一点 🌶️🌶️🌶️  比方说:
 
 ```ruby
 Faker::TvShows::GameOfThrones.character #=> "Tyrion Lannister"

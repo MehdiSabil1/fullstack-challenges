@@ -51,7 +51,7 @@ This will help us to get started designing the api endpoints to show in the fron
 
 In the `db/seeds.rb` file, let's create around some stories with comments.
 
-Tip: Use the [Faker](https://github.com/stympy/faker/) gem to spice up your data 🌶️🌶️🌶️  For example:
+Tip: Use the [Faker](https://github.com/faker-ruby/faker/) gem to spice up your data 🌶️🌶️🌶️  For example:
 
 ```ruby
 Faker::TvShows::GameOfThrones.character #=> "Tyrion Lannister"

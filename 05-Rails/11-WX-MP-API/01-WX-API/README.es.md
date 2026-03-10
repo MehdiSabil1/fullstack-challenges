@@ -51,7 +51,7 @@ Esto nos ayudará a comenzar el diseño de los endpoints de la  API que se mostr
 
 En el archivo `db/seeds.rb`, crea algunas historias con comentarios.
 
-Consejo: Usa la gema [Faker](https://github.com/stympy/faker/) para darle un poco de gusto a tus datos 🌶️🌶️🌶️ . Por ejemplo:
+Consejo: Usa la gema [Faker](https://github.com/faker-ruby/faker/) para darle un poco de gusto a tus datos 🌶️🌶️🌶️ . Por ejemplo:
 
 ```ruby
 Faker::TvShows::GameOfThrones.character #=> "Tyrion Lannister"

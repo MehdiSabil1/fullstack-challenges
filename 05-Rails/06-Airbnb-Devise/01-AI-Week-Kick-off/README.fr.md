@@ -117,6 +117,7 @@ Même si c’est juste une app squelette, c’est important de déployer sur Her
 ```bash
 heroku create ai-assistant-<user.lower_github_nickname> --region=REPLACE_WITH_REGION # (eu, us, ou toute région disponible dans `heroku regions`)
 heroku config:set WEB_CONCURRENCY=1 # corrige un bug temporaire Heroku
+heroku addons:create heroku-postgresql:essential-0 # ajoute l'add-on postgresql
 git push heroku master
 heroku run rails db:migrate
 ```

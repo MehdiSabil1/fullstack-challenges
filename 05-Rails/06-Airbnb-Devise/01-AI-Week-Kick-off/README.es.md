@@ -105,6 +105,7 @@ Aunque sea solo una aplicación esqueleto, es importante hacer deploy en Heroku 
 ```bash
 heroku create ai-assistant-<user.lower_github_nickname> --region=REEMPLAZA_CON_REGION # (eu, us, o cualquier región disponible en la lista de `heroku regions`)
 heroku config:set WEB_CONCURRENCY=1 # soluciona un error temporal de Heroku
+heroku addons:create heroku-postgresql:essential-0 # agrega el add-on de PostgreSQL
 git push heroku master
 heroku run rails db:migrate
 ```

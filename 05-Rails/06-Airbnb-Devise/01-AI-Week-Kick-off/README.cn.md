@@ -105,6 +105,7 @@ git push origin master
 ```bash
 heroku create ai-assistant-<user.lower_github_nickname> --region=替换为区域 # （eu、us 或 `heroku regions` 列表中可用的任何区域）
 heroku config:set WEB_CONCURRENCY=1 # 修复临时 Heroku 错误
+heroku addons:create heroku-postgresql:essential-0 # adds postgresql add-on
 git push heroku master
 heroku run rails db:migrate
 ```

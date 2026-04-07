@@ -18,7 +18,7 @@ Here are the **user actions** we want to implement in our app:
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-watch-list -d postgresql --skip-action-mailbox -T
+rails new rails-watch-list -d postgresql --skip-action-mailbox --skip-ci -T
 cd rails-watch-list
 ```
 

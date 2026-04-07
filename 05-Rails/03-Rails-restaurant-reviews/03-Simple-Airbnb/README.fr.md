@@ -16,7 +16,7 @@ Crée une nouvelle application Rails dans le dossier dont le nom est celui de to
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-simple-airbnb --skip-active-storage --skip-action-mailbox
+rails new rails-simple-airbnb --skip-active-storage --skip-action-mailbox --skip-ci
 cd rails-simple-airbnb
 git add .
 git commit -m "rails new"

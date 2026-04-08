@@ -1,3 +1,4 @@
+# rubocop:disable Style/OneClassPerFile
 class Bicycle
   attr_reader :gears, :wheels, :seats
 
@@ -35,3 +36,4 @@ def quiz
     result && answer
   end
 end
+# rubocop:enable Style/OneClassPerFile

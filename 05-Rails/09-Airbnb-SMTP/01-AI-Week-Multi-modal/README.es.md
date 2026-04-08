@@ -2,6 +2,6 @@
 
 Las demos intermedias quedaron atrás, ahora deberías tener una mejor idea de lo que vas a presentar durante las demos finales.
 
-Como viste durante la clase, ahora puedes **procesar archivos** y configurar ActiveStorage con Cloudinary para hacerlo.
+Puedes tener ideas de casos de uso de **Tools** que desees agregar, para introducir un comportamiento agéntico en tu app, dicho esto podría ser ambicioso o incierto para la demo de esta semana. Tendrás más tiempo durante las semanas de proyectos para explorarlos, ten paciencia.
 
-Asegúrate de usar el modelo correcto dependiendo del tipo de contenido del archivo, y de agregar las **validaciones** apropiadas en tu código para evitar procesar archivos demasiado grandes, para controlar tu consumo de API.
+En su lugar, podrías querer enfocarte en implementar el **comportamiento de streaming** con ActionCable y la transmisión Turbo Stream de chunks de respuestas LLM, para mejorar la Experiencia de Usuario cuando interactúan con el LLM.

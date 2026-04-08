@@ -33,7 +33,7 @@ Avant de pouvoir travailler sur les Périmètres 1 et 3, tu as besoin d'enregist
 
 ### Ajouter l'IA
 Maintenant que tu as une application Rails de base avec un modèle principal, il est temps d'ajouter des capacités d'IA.
-Si tu ne l'as pas encore fait, configure RubyLLM dans ton app, en suivant le cours d'Introduction aux LLM.
+Configure RubyLLM dans ton app, en suivant le cours d'Introduction aux LLM.
 
 C'est le point de départ pour ajouter les user stories liées à l'IA :
 - En tant qu'utilisateur, je peux créer un chat avec l'Assistant IA à propos d'un challenge.

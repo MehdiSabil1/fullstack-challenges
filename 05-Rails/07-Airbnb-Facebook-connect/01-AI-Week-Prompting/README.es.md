@@ -33,7 +33,7 @@ Antes de poder trabajar en los Ámbitos 1 y 3, necesitas registros de tu modelo 
 
 ### Agregando IA
 Ahora que tienes una aplicación Rails básica con un modelo principal, es hora de agregar capacidades de IA.
-Si aún no lo has hecho, configura RubyLLM en tu aplicación, siguiendo la clase de Introducción a LLM.
+Configura RubyLLM en tu aplicación, siguiendo la clase de Introducción a LLM.
 
 Este es el punto de partida para agregar las historias de usuario relacionadas con IA:
 - Como usuario, puedo crear un chat con el Asistente de IA sobre un ejercicio.

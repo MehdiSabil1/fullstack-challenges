@@ -31,7 +31,7 @@ Before being able to work on Scope 1 and 3, you need records of your core model 
 
 ### Adding AI
 Now that you have a basic Rails app with a core model, it's time to add AI capabilities.
-If you haven't done so already, set up RubyLLM in your app, following the Intro to LLM lecture.
+Set up RubyLLM in your app, following the Intro to LLM lecture.
 
 This is the starting point to adding the AI-related user stories:
 - As a user, I can create a chat with the AI Assistant about one challenge.
@@ -60,4 +60,3 @@ Remember that a good prompt should include:
 - **Context**: What the output will be used for and by whom (i.e. the user), and any relevant data to pass along the user input.
 - **Task**: usually defined by the user, but it should be clear, direct and specific.
 - **Format**: How the output should be structured (e.g. JSON, Markdown, etc.).
-

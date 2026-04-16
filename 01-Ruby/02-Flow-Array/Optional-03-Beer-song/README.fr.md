@@ -23,7 +23,7 @@ En prends une, passe-la autour, plus de bouteilles de bière sur le mur !
 
 ### Astuce
 
-* Tu peux envoyer des arguments à ton programme depuis la ligne de commande en utilisant [ARGV](http://ruby.about.com/od/rubyfeatures/a/argv.htm)
+* Tu peux envoyer des arguments à ton programme depuis la ligne de commande en utilisant [ARGV](https://ruby.code-maven.com/argv-the-command-line-arguments-in-ruby)
 * J'espère que tu as remarqué le changement de bouteill<strong>es</strong> à bouteill<strong>e</strong> lorsque seule 1 bouteille reste !
 
 _Ce changement devrait se produire dans `lib/interface.rb`._

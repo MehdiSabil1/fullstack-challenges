@@ -23,7 +23,7 @@ Take one down, pass it around, no more bottles of beer on the wall!
 
 ### Pista
 
-* Puedes pasarle argumentos al programa desde la línea de comando usando [ARGV](http://ruby.about.com/od/rubyfeatures/a/argv.htm)
+* Puedes pasarle argumentos al programa desde la línea de comando usando [ARGV](https://ruby.code-maven.com/argv-the-command-line-arguments-in-ruby)
 * ¡Espero que hayas notado el cambio de bottl<strong>es</strong> a bottl<strong>e</strong> cuando sólo queda una botella!
 
 ### Un poco de contexto sobre ARGV

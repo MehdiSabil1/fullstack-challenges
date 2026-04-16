@@ -1,3 +1,7 @@
+## Contexte et objectifs
+
+Entraîne-toi à utiliser des boucles et l'interpolation de chaînes de caractères en générant les paroles d'une chanson classique de manière programmatique. Tu apprendras également à passer des arguments à un programme Ruby depuis la ligne de commande en utilisant `ARGV`.
+
 ## Spécifications
 
 Écris un programme qui imprime les paroles de la chanson [99 Bottles of Beer](https://lyricsplayground.com/alpha/songs/numbers/99bottlesofbeeronthewall.html).

@@ -5,7 +5,7 @@ Existe una tercera manera de **hacer loops** (bucles) con un lenguaje de program
 ## Especificaciones
 
 - Escribe un método en Ruby que compute la suma de enteros entre un valor mínimo y uno máximo (ambos incluidos) usando **recursion**
-- Debe devolver -1 si el valor mínimo es mayor que el valor máximo
+- Si el valor mínimo es mayor que el valor máximo, debe devolver -1
 
 ## Sugerencia
 

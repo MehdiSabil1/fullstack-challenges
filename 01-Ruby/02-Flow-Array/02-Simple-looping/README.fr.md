@@ -1,14 +1,19 @@
 ## Contexte et objectifs
 
-Apprendre deux façons de créer une boucle dans Ruby :
+Une boucle en Ruby est un moyen d’exécuter le même code plusieurs fois. C’est utile quand tu veux effectuer la même action sur une collection d’éléments, ou quand tu veux répéter une action jusqu’à ce qu’une certaine condition soit remplie. Un bon exemple est si tu veux demander à un utilisateur s’il veut continuer à faire quelque chose, et que tu veux continuer à demander jusqu’à ce qu’il dise « non ».
+
+Apprenons les deux façons de créer une boucle dans Ruby :
 - avec une boucle `for`
 - avec une boucle `while`
 
 ## Spécifications
 
+Tu vas écrire deux fonctions qui font la même chose, mais avec une syntaxe différente :
+
 - Écris une méthode dans Ruby permettant de calculer la somme des integers entre une valeur minimale et une valeur maximale (valeurs minimale et maximale comprises).
 - Si la valeur minimale est supérieure à la valeur maximale, elle doit retourner `-1`
-- Tu dois implémenter au moins les deux versions simples, en utilisant les structures `for..end` et `while..end`.
+
+`sum_with_for` doit utiliser une boucle `for`, tandis que `sum_with_while` doit utiliser une boucle `while`.
 
 ## Suggestions et ressources complémentaires
 

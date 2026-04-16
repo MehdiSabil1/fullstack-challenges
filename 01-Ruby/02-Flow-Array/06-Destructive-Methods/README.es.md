@@ -9,11 +9,13 @@ Los métodos destructivos modifican sus **receptores** (objetos sobre los cuales
 
 e.g.  `["Abricot du Laudot", "Black Caviar", "Brigadier Gerard"]` deben transformarse en `["3-Brigadier Gerard!", "2-Black Caviar!", "1-Abricot du Laudot!"]` luego de ser formateados por el método. ¡Este es el único formato que el presentador entenderá!
 
+**Nota:** Los métodos destructivos que has visto hasta ahora, como `reverse!`, `upcase!`, `downcase!`, son métodos que modifican el string sobre el que se llaman. Por ejemplo, `"hello".upcase!` modificará el string para que se convierta en `"HELLO"`. Todavía no sabemos cómo definir un método de este tipo, pero lo aprenderemos más adelante. Por eso `horse_racing_format!(race_array)` modificará el array `race_array` que pasas como argumento.
+
 **🤔 Recomendación:** No dudes en abrir el archivo en la carpeta `spec` y **leer el test del código** para entender lo que está pasando. Este es el código que se ejecuta al correr `rake` en tu Terminal.
 
 ## Recomendaciones y recursos adicionales
 
-- No está de más recordarte que debes usar iteradores destructivos en tu método 😊
+Muchos iteradores en Ruby tienen una versión destructiva que modifica la colección sobre la que se llaman. Por ejemplo, `map` tiene `map!`, `select` tiene `select!`, y así sucesivamente. Puedes encontrar más información sobre estos métodos en la [documentación de Ruby](https://ruby-doc.org/3.3.5/Enumerable.html). ¡Intenta usar uno de estos métodos para implementar `horse_racing_format!` 💪
 
 ## Puntos clave de aprendizaje
 

@@ -5,7 +5,7 @@ There's a third way to **loop** with a programming language: with [recursion](ht
 ## Specs
 
 - Write a method in Ruby that computes the sum of the integers between a min value and a max value (min and max included) using **recursion**
-- If the min value is greather than the max value, it should return -1
+- If the min value is greater than the max value, it should return -1
 
 ## Tip
 

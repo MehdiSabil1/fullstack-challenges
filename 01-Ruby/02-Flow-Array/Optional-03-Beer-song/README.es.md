@@ -1,3 +1,7 @@
+## Contexto y Objetivos
+
+Practica el uso de bucles e interpolación de strings generando las letras de una canción clásica de manera programática. También aprenderás a pasar argumentos a un programa Ruby desde la línea de comando usando `ARGV`.
+
 ## Especificaciones
 
 Escribe el código de un programa que imprima las letras de una canción [99 Bottles of Beer](https://lyricsplayground.com/alpha/songs/numbers/99bottlesofbeeronthewall.html).

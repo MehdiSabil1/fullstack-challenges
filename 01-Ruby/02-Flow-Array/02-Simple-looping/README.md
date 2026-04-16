@@ -1,14 +1,19 @@
 ## Background & Objectives
 
-Learn the two ways to "loop" in Ruby:
+A loop in Ruby is a way to have the same code be run multiple times. This is useful when you want to perform the same action on a collection of items, or when you want to repeat an action until a certain condition is met. A good example of this is if you want to ask a user if they want to continue doing something, and you want to keep asking until they say "no".
+
+Let's learn the two ways to "loop" in Ruby:
 - With a `for` loop
 - With a `while` loop
 
 ## Specs
 
+You will write two function that do the same thing, but one will use different syntax:
+
 - Write a method in Ruby that computes the sum of the integers between a min value and a max value (min and max included).
 - If the min value is greater than the max value, it should return `-1`
-- You should implement the two simple versions at least, using `for..end` and `while..end` structures.
+
+`sum_with_for` should use a `for` loop, while `sum_with_while` should use a `while` loop.
 
 ## Further suggestions & resources
 

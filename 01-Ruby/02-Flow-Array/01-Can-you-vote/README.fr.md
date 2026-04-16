@@ -1,5 +1,7 @@
 ## Contexte et objectifs
 
+Commençons par apprendre à utiliser les instructions `if/else` en Ruby. Rappelle-toi que les instructions `if/else` te permettent d’exécuter du code différent selon qu’une condition est `true` ou `false`. C’est un concept fondamental en programmation qui permet à ton code de gérer différentes situations différemment.
+
 T’entraîner à utiliser `if/else` pour modifier le flow de ton code.
 
 Indice :

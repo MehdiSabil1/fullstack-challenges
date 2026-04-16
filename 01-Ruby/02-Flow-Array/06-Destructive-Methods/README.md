@@ -11,11 +11,13 @@ They are dangerous in a way. Therefore a good **convention** is to name them wit
 e.g. `["Abricot du Laudot", "Black Caviar", "Brigadier Gerard"]` should become `["3-Brigadier Gerard!", "2-Black Caviar!", "1-Abricot du Laudot!"]` after formatting.
 That's the only format the anchorman can understand!
 
+**Note:** The destructive methods you've seen so far like `reverse!`, `upcase!`, `downcase!` are all methods that modify the string they are called on like `"hello".upcase!` will modify the string to become `"HELLO"`. We don't know how to define a method like this yet, but we'll learn it later. That's why `horse_racing_format!(race_array)` will modify the array `race_array` that you pass in as an argument.
+
 **🤔 Tip:** Don't hesitate to open the file in the `spec` folder and **read the test code** to understand what's going on. This is the code which gets executed when you run `rake` in your terminal.
 
 ## Further suggestions & resources
 
-- Needless to say, you should be using destructive iterators within your method 😊
+Many iterators in Ruby have a destructive version that modifies the collection they are called on. For example, `map` has `map!`, `select` has `select!`, and so on. You can find more information about these methods in the [Ruby documentation](https://ruby-doc.org/3.3.5/Enumerable.html). See if you can use one of these methods to implement `horse_racing_format!` 💪
 
 ## Key learning points
 

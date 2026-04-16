@@ -1,3 +1,7 @@
+## 背景与目标
+
+通过编程方式生成一首经典歌曲的歌词，练习循环和字符串插值。你还将学习如何使用`ARGV`从命令行向Ruby程序传递参数。
+
 ## 详细说明
 
 编写一个程序打印出[99 Bottles of Beer](https://lyricsplayground.com/alpha/songs/numbers/99bottlesofbeeronthewall.html )这首歌的歌词。

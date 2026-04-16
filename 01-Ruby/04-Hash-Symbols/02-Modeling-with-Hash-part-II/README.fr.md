@@ -1,6 +1,6 @@
 ## Contexte et objectifs
 
-Maintenant, supposons que tu veuilles améliorer ton compteur de calories de façon à ce qu’il accepte une liste de boissons, burgers, garnitures **et MENUS** (meals). On va ajouter ces 3 menus à notre carte :
+Maintenant, supposons que tu veuilles améliorer ton compteur de calories de façon à ce qu'il accepte une liste de boissons, burgers, garnitures **et MENUS** (meals). On va ajouter ces 3 menus à notre carte :
 
 <table class="table">
   <thead>
@@ -27,10 +27,9 @@ Maintenant, supposons que tu veuilles améliorer ton compteur de calories de fa�
 
 ## Spécifications
 
-Tu voudras peut-être stocker ces repas dans une autre constante. Remarque : n’essaie pas de pré-calculer les calories de chaque repas,
-contente-toi de stocker les plats qui composent le repas. Comment pourrais-tu représenter les plats de chaque repas ?
+Stocke ces repas dans une deuxième constante. Pour un repas comme le "Cheesy Combo", tu voudrais savoir qu'il est composé d'un "Cheese Burger", de "Sweet Potatoes" et d'une "Lemonade". Ton objectif est donc de pouvoir passer du nom d'un repas aux trois plats qui le composent. Tu pourras alors utiliser chacun de ces plats pour calculer le total de calories. Quelle structure de données utiliserais-tu pour décrire les repas dans une constante `MEALS` ?
 
-On va maintenant créer une méthode `#calories_counter` complète, qui nous permettra de calculer les calories en exécutant :
+On va maintenant créer une méthode `#calories_counter` complète, qui nous permettra de calculer les calories en exécutant :
 
 ```ruby
 orders = ["Sweet Potatoes", "Cheesy Combo", "Lemonade", "Vegan Combo"]
@@ -40,8 +39,8 @@ puts calories_counter(orders)
 
 ## Enseignements clés
 
-- Comment récupérer une valeur stockée dans un `Array` à l’intérieur d’un `Hash` ?
+- Comment récupérer une valeur stockée dans un `Array` à l'intérieur d'un `Hash` ?
 
 Imagine que nous construisons une application pour un zoo:
-- Quelle structure de données utiliserais-tu pour stocker des noms d’animaux, triés par ordre alphabétique ?
-- Quelle structure de données utiliserais-tu pour stocker des noms d’animaux et leurs couleurs ?
+- Quelle structure de données utiliserais-tu pour stocker des noms d'animaux, triés par ordre alphabétique ?
+- Quelle structure de données utiliserais-tu pour stocker des noms d'animaux et leurs couleurs ?

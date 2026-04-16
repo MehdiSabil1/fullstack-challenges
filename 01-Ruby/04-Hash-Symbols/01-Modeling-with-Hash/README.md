@@ -45,8 +45,9 @@ Let's say you want to stay fit while learning how to code :)  You have the brill
   </tbody>
 </table>
 
-You need to store this information in a Ruby [constant](https://www.rubyguides.com/2017/07/ruby-constants/) to create a kind of database.
-For instance, below is an example of a `Hash` - `AGE_OF_STUDENTS` - that contains students and their ages:
+You'll store this menu data in a Ruby [constant](https://www.rubyguides.com/2017/07/ruby-constants/). A constant is like a variable, but it's meant to hold data that won't change. By convention, constant names are written in `ALL_CAPS`.
+
+Here's an example of a constant holding a `Hash` of students and their ages:
 
 ```ruby
 AGE_OF_STUDENTS = {
@@ -56,6 +57,14 @@ AGE_OF_STUDENTS = {
 }
 ```
 
+You could then look up a value by its key:
+
+```ruby
+AGE_OF_STUDENTS["Laura"]  # => 23
+```
+
+Your constant will hold the menu above as a `Hash`, with dish names as keys and calorie counts as values. Your method will then look up each dish in that constant to compute the total.
+
 Read the documentation about [Hashes](https://ruby-doc.org/3.3.5/Hash.html).
 You'll use them all the time, so make friends with them 😊
 
@@ -63,9 +72,8 @@ You'll use them all the time, so make friends with them 😊
 
 ## Specs
 
-- Create a `poor_calories_counter` that returns the total number of calories for the three items of your order.
-- **constraint**: your method should make use of a hash (obviously!)
-- **constraint**: your method must use **our given calorie values**!
+- Define a `MENU` constant that stores the menu above as a `Hash`.
+- Define a `#poor_calories_counter` method that takes three dish names as arguments and returns the total number of calories for those three dishes, **by looking them up in your `MENU` constant**.
 
 For example `poor_calories_counter("Cheese Burger", "Sweet Potatoes", "Iced Tea")` should return `600`.
 

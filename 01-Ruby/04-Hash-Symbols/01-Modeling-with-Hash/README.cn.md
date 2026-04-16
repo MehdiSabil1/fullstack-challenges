@@ -45,8 +45,9 @@
   </tbody>
 </table>
 
-这些信息需要存储于一个Ruby[常量(constant)](https://www.rubyguides.com/2017/07/ruby-constants/) 以此模仿数据库。
-例如，下面是一个`Hash`的例子 - `AGE_OF_STUDENTS`包含学生和他们的年龄：
+你将把这些菜单数据存储于一个Ruby[常量(constant)](https://www.rubyguides.com/2017/07/ruby-constants/)。常量就像变量，但它用于保存不会改变的数据。按照惯例，常量名称用`全大写字母`书写。
+
+下面是一个包含学生和他们年龄的`Hash`常量示例——`AGE_OF_STUDENTS`：
 
 ```ruby
 AGE_OF_STUDENTS = {
@@ -56,6 +57,14 @@ AGE_OF_STUDENTS = {
 }
 ```
 
+然后你可以通过键来查找值：
+
+```ruby
+AGE_OF_STUDENTS["Laura"]  # => 23
+```
+
+你的常量将以`Hash`的形式保存上面的菜单，以菜品名称为键，卡路里数量为值。你的方法将在该常量中查找每道菜品来计算总卡路里。
+
 阅读有关[哈希（Hashes）](https://ruby-doc.org/3.3.5/Hash.html)的文档。
 你将总是会用到它们，所以和它们交个朋友吧 😊
 
@@ -63,9 +72,8 @@ AGE_OF_STUDENTS = {
 
 ## 详细说明
 
-- 创建一个`poor_calories_counter` 方法，它返回你订单中的三样食物的总卡路里数量。
-- **约束条件**： 你的方法应该利用一个哈希（当然啦！）
-- **约束条件**： 你的方法必须使用**我们给定的卡路里值**
+- 定义一个`MENU`常量，将上面的菜单存储为`Hash`。
+- 定义一个`#poor_calories_counter`方法，接受三个菜品名称作为参数，**通过在`MENU`常量中查找**来返回这三道菜的总卡路里数量。
 
 例如`poor_calories_counter("Cheese Burger", "Sweet Potatoes", "Iced Tea")`应该返回`600`。
 

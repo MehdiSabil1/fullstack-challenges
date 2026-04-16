@@ -53,8 +53,9 @@ Digamos que quieres mantenerte en forma mientras aprendes a programar :)  Se te 
   </tbody>
 </table>
 
-Debes guardar esta información en una [constante](https://www.rubyguides.com/2017/07/ruby-constants/) Ruby para crear este tipo de base de datos.
-Por ejemplo, el siguiente es un ejemplo de un `Hash` - `AGE_OF_STUDENTS` - que contiene estudiantes y sus edades:
+Guardarás estos datos del menú en una [constante](https://www.rubyguides.com/2017/07/ruby-constants/) Ruby. Una constante es como una variable, pero está pensada para contener datos que no cambiarán. Por convención, los nombres de las constantes se escriben en `MAYÚSCULAS`.
+
+El siguiente es un ejemplo de una constante que contiene un `Hash` de estudiantes y sus edades:
 
 ```ruby
 AGE_OF_STUDENTS = {
@@ -64,15 +65,22 @@ AGE_OF_STUDENTS = {
 }
 ```
 
+Luego podrías obtener un valor por su llave:
+
+```ruby
+AGE_OF_STUDENTS["Laura"]  # => 23
+```
+
+Tu constante contendrá el menú anterior como un `Hash`, con los nombres de los platos como llaves y los conteos de calorías como valores. Tu método buscará cada plato en esa constante para calcular el total.
+
 Lee la documentación sobre [Hashes](https://ruby-doc.org/3.3.5/Hash.html). Lo usarás todo el tiempo así que hazte amigo de ellos 😊.
 
 **Para este ejercicio, usa `Strings` para tus llaves (keys) en vez de `Symbols`, por cuestiones de simplicidad**
 
 ## Especificaciones
 
-- Crea un `poor_calories_counter` que devuelva el total del número de calorías de los tres ítems de tu orden.
-- **limitación**: Tu método debe usar un hash (¡obviamente!).
-- **limitación**: ¡Tu método debe usar **nuestros valores calóricos dados**!
+- Define una constante `MENU` que almacene el menú anterior como un `Hash`.
+- Define un método `#poor_calories_counter` que tome tres nombres de platos como argumentos y devuelva el número total de calorías de esos tres platos, **buscándolos en tu constante `MENU`**.
 
 Por ejemplo, `poor_calories_counter("Cheese Burger", "Sweet Potatoes", "Iced Tea")` debe devolver `600`.
 

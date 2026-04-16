@@ -30,8 +30,8 @@ On va exécuter une version *simplifiée* du Black Jack :
 
 ### `croupier.rb`
 
-- Implémente la méthode `#state_of_the_game` qui crée un message avec les scores du croupier et du joueur.
-- Implémente la méthode `#end_game_message` à appeler à la fin du jeu et qui contient le résultat du jeu (victoire, défaite ou égalité).
+- Implémente la méthode `#state_of_the_game` qui crée un message avec les scores du croupier et du joueur. ex. `"Your score is 6, bank is 17"`
+- Implémente la méthode `#end_game_message` à appeler à la fin du jeu et qui contient le résultat du jeu (victoire, défaite ou égalité). ex. `"You beat the bank! You win."` ou `"Bust! You lose."` ou `"Push. You get your money back."`
 
 ### `interface.rb`
 

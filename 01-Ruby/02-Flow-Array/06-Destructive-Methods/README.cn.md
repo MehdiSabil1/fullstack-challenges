@@ -11,11 +11,13 @@
 例如，`["Abricot du Laudot", "Black Caviar", "Brigadier Gerard"]`在格式编排后应该变为`["3-Brigadier Gerard!", "2-Black Caviar!", "1-Abricot du Laudot!"]`。
 这是主持人能理解的唯一格式！
 
+**注意：** 你目前见过的破坏性方法，如`reverse!`、`upcase!`、`downcase!`，都是修改所调用字符串的方法。例如，`"hello".upcase!`会将字符串修改为`"HELLO"`。我们现在还不知道如何定义这样的方法，但以后会学到。这就是为什么`horse_racing_format!(race_array)`会修改你作为参数传入的数组`race_array`。
+
 **🤔 提示:** 你可以随时打开`spec`文件夹中的文件，并**阅读测试代码**以便理解发生了什么。这是当你在终端中运行`rake`时所执行的代码。
 
 ## 进一步建议 & 资源
 
-- 不用说，你应该在你的方法（method）中使用破坏性迭代器（destructive iterator）😊
+Ruby中的许多迭代器都有破坏性版本，可以修改它们所调用的集合。例如，`map`有`map!`，`select`有`select!`，等等。你可以在[Ruby文档](https://ruby-doc.org/3.3.5/Enumerable.html)中找到更多关于这些方法的信息。看看你是否可以使用其中一个方法来实现`horse_racing_format!` 💪
 
 ## 关键学习要点
 

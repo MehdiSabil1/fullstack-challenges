@@ -1,5 +1,7 @@
 ## Background & Objectives
 
+Let's get warmed up by learning how to use `if/else` statements in Ruby. Remember that `if/else` statements allow you to execute different code based on whether a condition is `true` or `false`. This is a fundamental concept in programming that helps you make your code handle different situations differently.
+
 Practice using `if/else` to modify the flow of your code.
 
 Hint:

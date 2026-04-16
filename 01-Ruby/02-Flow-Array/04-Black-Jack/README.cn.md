@@ -32,8 +32,8 @@
 
 ### `croupier.rb`
 
-- 完成`#state_of_the_game`方法。这个方法会返回带有银行和玩家分数的一条信息。
-- 完成在游戏结束时调用的`#end_game_message`。这个方法会返回游戏的结果（赢/输/平）
+- 完成`#state_of_the_game`方法。这个方法会返回带有银行和玩家分数的一条信息。例如：`"Your score is 6, bank is 17"`
+- 完成在游戏结束时调用的`#end_game_message`。这个方法会返回游戏的结果（赢/输/平）。例如：`"You beat the bank! You win."` 或 `"Bust! You lose."` 或 `"Push. You get your money back."`
 
 ### `interface.rb`
 

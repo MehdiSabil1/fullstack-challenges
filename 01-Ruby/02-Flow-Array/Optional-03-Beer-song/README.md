@@ -1,3 +1,7 @@
+## Background & Objectives
+
+Practice looping and string interpolation by generating the lyrics of a classic song programmatically. You'll also learn how to pass arguments to a Ruby program from the command line using `ARGV`.
+
 ## Specs
 
 Write a program that prints the lyrics of the song [99 Bottles of Beer](https://lyricsplayground.com/alpha/songs/numbers/99bottlesofbeeronthewall.html).

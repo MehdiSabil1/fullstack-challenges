@@ -10,7 +10,7 @@ Tu vas utiliser les spécifications externes rédigées par le prof pour tester 
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-yelp-mvp --skip-active-storage --skip-action-mailbox -T
+rails new rails-yelp-mvp --skip-active-storage --skip-action-mailbox --skip-ci -T
 cd rails-yelp-mvp
 git add .
 git commit -m "rails new"

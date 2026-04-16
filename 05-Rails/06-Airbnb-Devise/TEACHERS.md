@@ -35,9 +35,9 @@ rails new \
   APP_NAME
 ```
 
-## Intermediate demo (during Multi-modal inference)
+## Intermediate demo (during Lesson 3)
 
-For the first intermediate demo on Multi-modal inference unit, every team should have:
+For the first intermediate demo, every team should have:
 
 - a well-designed app (Bootstrap classes for form inputs and buttons, content centered in `container`, responsive grid for flat's cards, nice home page, functional navigation bar, etc.),
 - a user sign up / sign in page (sign ups should not be showcased during demos),
@@ -50,7 +50,7 @@ If you see students losing time on non-core features (edit your profile, edit or
 
 On the contrary, if all your teams have a very well designed app with simple core features working, they will be really motivated to keep enhancing their app and make kick-ass final demo.
 
-## Final demo (during Tools & Agents)
+## Final demo (during Lesson 5)
 
 For the final demo, share the [demo day presentation guidelines](https://kitt.lewagon.com/camps/<user.batch_slug>/challenges?path=06-Projects%2F05-Build-an-API%2F01-Intermediate-demo).
 

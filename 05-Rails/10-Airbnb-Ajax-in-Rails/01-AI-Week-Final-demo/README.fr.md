@@ -1,8 +1,6 @@
 ## AI Week - Démos finales
 
-À ce stade, tu devrais avoir un Assistant AI entièrement fonctionnel, prêt à être présenté d'ici la fin de la session. Tu as peut-être des idées de cas d'usage d'outils (Tools) que tu souhaites ajouter, pour introduire un comportement agentique dans ton app, cela dit cela pourrait être ambitieux ou incertain pour la démo de cette semaine. Tu auras plus de temps pendant les semaines de projets pour les explorer, sois patient.
-
-À la place, tu pourrais vouloir te concentrer sur l'implémentation du **comportement de streaming** avec ActionCable et la diffusion Turbo Stream des chunks de réponses LLM, pour améliorer l'Expérience Utilisateur quand ils interagissent avec le LLM !
+À ce stade, tu devrais avoir un Assistant AI entièrement fonctionnel, prêt à être présenté d'ici la fin de la session.
 
 Quelques détails sur ce qui est attendu de toi pendant tes démos :
 1. 5 minutes par groupe

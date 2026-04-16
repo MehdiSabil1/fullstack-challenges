@@ -20,7 +20,7 @@ rails -v
 
 ```bash
 cd ~/code/<user.github_nickname>
-rails new rails-stupid-coaching --skip-active-storage --skip-action-mailbox
+rails new rails-stupid-coaching --skip-active-storage --skip-action-mailbox --skip-ci
 cd rails-stupid-coaching
 git add .
 git commit -m "rails new"

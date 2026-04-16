@@ -27,8 +27,7 @@ Now, let's say you want to improve your calorie counter, so that it can accept a
 
 ## Specs
 
-You may want to store these meals in another constant. Note: don't try to pre-compute the calories for each meal,
-just store the dishes that make up the meal. How do you think you could represent the dishes in each meal?
+Store these meals in a second constant. For a meal like the "Cheesy Combo", you'd want to know that it consists of "Cheese Burger", "Sweet Potatoes", and "Lemonade". So, your goal is to be able to go from the name of a meal to the three menu items that come with it. You can then use each of those menu items to calculate the total calories. What data structure would you use to describe the meals in a `MEALS` constant?
 
 Let's now create a complete `#calories_counter` that will enable us to calculate calories by running:
 

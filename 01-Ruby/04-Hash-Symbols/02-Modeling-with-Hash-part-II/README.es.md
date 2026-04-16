@@ -27,7 +27,7 @@ Ahora digamos que quieres mejorar tu contador de calorías para que acepte una l
 
 ## Especificaciones
 
-Tal vez quieras guardar estas comidas en otra constante. Nota: no intentes hacer el cálculo de calorías de cada plato de antemano, solo guarda los platos que compongan tu comida. ¿Cómo crees que podrías representar los platos de cada comida?
+Guarda estas comidas en una segunda constante. Para una comida como el "Cheesy Combo", querrías saber que está compuesto por "Cheese Burger", "Sweet Potatoes" y "Lemonade". Entonces, tu objetivo es poder ir desde el nombre de una comida hasta los tres ítems del menú que la componen. Luego puedes usar cada uno de esos ítems para calcular el total de calorías. ¿Qué estructura de datos usarías para describir las comidas en una constante `MEALS`?
 
 Creemos un `#calories_counter` completo que nos permitirá calcular las calorías al correr siguiente código:
 

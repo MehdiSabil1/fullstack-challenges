@@ -23,7 +23,7 @@ Take one down, pass it around, no more bottles of beer on the wall!
 
 ### 提示
 
-* 你可以使用[ARGV](http://ruby.about.com/od/rubyfeatures/a/argv.htm)从命令行向你的程序传递参数。
+* 你可以使用[ARGV](https://ruby.code-maven.com/argv-the-command-line-arguments-in-ruby)从命令行向你的程序传递参数。
 * 希望你注意到当只剩余一瓶时，从bottl<strong>es</strong> 到 bottl<strong>e</strong> 的变化。
 
 ### 一点关于ARVG的背景

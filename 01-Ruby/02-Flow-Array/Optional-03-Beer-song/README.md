@@ -23,7 +23,7 @@ Take one down, pass it around, no more bottles of beer on the wall!
 
 ### Hint
 
-* You can send arguments to your program from the command line using [ARGV](http://ruby.about.com/od/rubyfeatures/a/argv.htm)
+* You can send arguments to your program from the command line using [ARGV](https://ruby.code-maven.com/argv-the-command-line-arguments-in-ruby)
 * I hope you noticed the change from bottl<strong>es</strong> to bottl<strong>e</strong> when only 1 bottle remains!
 
 _This change should happen in `lib/interface.rb`._

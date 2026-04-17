@@ -39,9 +39,20 @@ Hence, there are two new components:
 - **Employees**
 - **Orders**
 
+## How we'll build this
+
+Same two-phase approach as yesterday:
+
+1. **Data layer first** — employee model and repository, then order model and repository. Use `rake` to verify each piece.
+2. **Features second** — build each feature one at a time and test it by running the app.
+
+We'll also add a login feature, which behaves a bit differently from all the others, since you have to be logged in first before you can do anything else.
+
 ## 1 - Employees
 
 ### 1.1 - Employee model
+
+Let's start with the data layer for employees.
 
 Our restaurant has two types of employees, **managers** and **riders**. Both have an `id`, a `username` and a `password`, but they have different privileges depending of their `role`.
 
@@ -101,6 +112,8 @@ Everything is working? Good! Time to `git add`, `commit` and `push`.
 
 ### 2.1 - Order model
 
+Back to the data layer, this time for orders.
+
 Our restaurant takes orders, so we need a way to represent what an order is.
 
 An order is what ties everything together. Each order has an id, a meal, a customer, an employee plus a `delivered` boolean to record whether or not the order has been delivered.
@@ -138,13 +151,15 @@ Also, make sure that your Orders CSV file stores the information with these head
 
 All green? Good! Time to `git add`, `commit` and `push`.
 
-### 2.3 - Orders controller
+### 2.3 - Orders features
 
-Let's move to the controller. Here are the **user actions** we want to implement:
+Let's move to the `OrdersController`. Here are the **user actions** we want to implement:
 - As a manager, I can `add` a new order *(hint: orders are only assigned to riders)*
 - As a manager, I can `list_undelivered_orders`
 - As a rider, I `list_my_orders` to list all my undelivered orders
 - As a rider, I can `mark_as_delivered` one of my undelivered orders
+
+⚠️ **Code in silo** — implement one action at a time and test it by running your app before moving on to the next one.
 
 Remember that the role of the controller is to delegate the work to the other components of our app (models, repositories and views)!
 
@@ -158,7 +173,7 @@ ruby app.rb
 
 `rake order` should also help you go through all these steps. Follow your guide!
 
-Make sure your four order user actions work before moving on to the next feature.
+Make sure each of the four order user actions works before moving on to the next feature.
 
 **Important**: the `orders_controller` tests run by `rake` **only work if you define the parameters in `#initialize` in the same order as in the tests**:
 

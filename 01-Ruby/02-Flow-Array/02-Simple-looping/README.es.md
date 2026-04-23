@@ -18,7 +18,7 @@ Escribirás dos funciones que hacen lo mismo, pero con sintaxis diferente:
 
 ## Recomendaciones y recursos adicionales
 
-- [Bucles Ruby](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
+- [Ruby loops](https://www.rubyguides.com/ruby-tutorial/loops/)
 - En Ruby se usa más el iterador `each` que el bucle `for` cuando quieres iterar a través de una colección. Esto lo veremos en los próximos días.
 
 ## Puntos clave de aprendizaje.

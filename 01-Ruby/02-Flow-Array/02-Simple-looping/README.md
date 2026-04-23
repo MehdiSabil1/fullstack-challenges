@@ -17,7 +17,7 @@ You will write two function that do the same thing, but one will use different s
 
 ## Further suggestions & resources
 
-- [ruby loops](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
+- [Ruby loops](https://www.rubyguides.com/ruby-tutorial/loops/)
 - In Ruby, using an `each` iterator is considered more idiomatic than a `for` loop when you want to iterate through a collection. We will see that in the next days.
 
 ## Key learning points

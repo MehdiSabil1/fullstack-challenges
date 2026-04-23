@@ -138,6 +138,22 @@ We can use [`v-bind`](https://vuejs.org/api/built-in-directives.html#v-bind) to 
 ```html
 <input type="checkbox" v-bind:checked="theDoneBooleanGoesHere">
 ```
+
+For example, if you had data like this:
+```javascript
+data() {
+  return {
+    username: "alice"
+  }
+}
+```
+
+You could bind it to a text input's value:
+```html
+<input type="text" v-bind:value="username">
+```
+
+Similarly, for a checkbox, you bind to `checked` with a boolean value. Now think about how to access the boolean value for each todo item in your list!
 </details>
 
 #### v-cloak 🧥

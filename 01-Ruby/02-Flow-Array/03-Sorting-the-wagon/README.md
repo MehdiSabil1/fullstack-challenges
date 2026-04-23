@@ -33,7 +33,7 @@ Don't worry about building the interface yet; that will come later. For now, foc
 
 Now, let's build a simple interactive program that uses the `wagon_sort` method. The program will prompt the user to enter student names one by one, and when the user is done, it will display the sorted list of names.
 
-Open the `interface.rb` file and make sure to use the `wagon_sort` method. The interface should have a properly stylized output. The names should be separated by commas (`, `) except for the last two that must be separated by the word `and`. Each name should also be on a new line.
+Open the `interface.rb` file and make sure to use the `wagon_sort` method. The interface should have a properly stylized output. The names should be separated by commas (`, `) except for the last two that must be separated by the word `and`.
 
 It should work like this:
 

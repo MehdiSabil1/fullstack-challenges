@@ -17,7 +17,7 @@ Tu vas écrire deux fonctions qui font la même chose, mais avec une syntaxe dif
 
 ## Suggestions et ressources complémentaires
 
-- [Boucles Ruby](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
+- [Ruby loops](https://www.rubyguides.com/ruby-tutorial/loops/)
 - En Ruby, on utilise l’itérateur `each` plutôt qu’une boucle `for` pour itérer sur une collection. On verra ça dans les prochains jours.
 
 ## Enseignements clés

@@ -39,9 +39,20 @@ Por lo tanto, hay dos nuevos componentes:
 - **Employees**: empleados
 - **Orders**: pedidos
 
+## Cómo vamos a construir esto
+
+Mismo enfoque de dos fases que ayer:
+
+1. **Primero la capa de datos** — modelo y repositorio de empleados, luego modelo y repositorio de pedidos. Usa `rake` para verificar cada parte.
+2. **Luego las funcionalidades** — construye cada funcionalidad de una en una y testeala corriendo la aplicación.
+
+También añadiremos una funcionalidad de login, que se comporta de manera un poco diferente de las demás, ya que tienes que estar logueado antes de poder hacer cualquier otra cosa.
+
 ## 1 - `Employee`
 
 ### 1.1 - Modelo de `Employee`
+
+Comencemos con la capa de datos para los empleados.
 
 Nuestro restaurante tiene dos tipos de empleados: **gerentes** y **repartidores**. Ambos tienen número de identificación `id`, usuario (`username`) y contraseña (`password`). Sin embargo, tienen privilegios diferentes dependiendo de sus roles (`role`).
 
@@ -89,7 +100,7 @@ Después de haber iniciado sesión, verás un tablero de comando **de acuerdo a 
 
 Escribe el código para implementar este comportamiento.
 
-No hay rake para esta parte del desafío. Corre tu aplicación ejecutando el siguiente comando en la Terminal:
+No hay rake para esta parte del ejercicio. Corre tu aplicación ejecutando el siguiente comando en la Terminal:
 
 ```bash
 ruby app.rb
@@ -100,6 +111,8 @@ ruby app.rb
 ## 2 - `Order`
 
 ### 2.1 - Modelo de `Order`
+
+De vuelta a la capa de datos, esta vez para los pedidos.
 
 Nuestro restaurante toma pedidos, así que tenemos que representar lo que es un pedido.
 
@@ -139,14 +152,15 @@ A su vez, asegurate que tu CSV de Orders guarde la informacion utilizando los si
 
 ¿Todo en verde? ¡Qué bueno! Es hora de hacer `git add`, `commit` y `push`.
 
-### 2.3 Controlador de `Order`
+### 2.3 Funcionalidades de `Order`
 
-Vayamos al controlador. Las siguientes son las **acciones de usuario** que queremos implementar:
+Ahora vayamos al `OrdersController`. Las siguientes son las **acciones de usuario** que queremos implementar:
 - Como gerente, puedo agregar un pedido (`add`) *(pista: los pedidos solo son asignados a repartidores)*
 - Como gerente, puedo mostrar la lista de todos los pedidos que no han sido entregados (`list_undelivered_orders`)
 - Como repartidor, puedo mostrar la lista de todos mis pedidos no entregados (`list_my_orders`)
 - Como repartidor, puedo marcar uno de mis pedidos como entregado (`mark_as_delivered`)
 
+⚠️ **Codea en silo** — implementa una acción a la vez y testeala corriendo tu aplicación antes de pasar a la siguiente.
 
 ¡Recuerda que el rol del controlador es delegar el trabajo a los otros componentes de nuestra aplicación (modelo, repositorio y vistas)!
 
@@ -160,7 +174,7 @@ ruby app.rb
 
 `rake order` también te debería ser de utilidad en estos pasos. ¡Sigue la guía!
 
-Asegurate que las cuatro acciones de usuario para pedidos funcionen bien antes de trabajar en la siguiente funcionalidad.
+Asegurate que cada una de las cuatro acciones de usuario para pedidos funcione bien antes de trabajar en la siguiente funcionalidad.
 
 **Importante**: los tests de `orders_controller` que corre `rake` **solo funcionan si defines los parámetros en `#initialize` en el mismo orden que el que está en los tests**:
 

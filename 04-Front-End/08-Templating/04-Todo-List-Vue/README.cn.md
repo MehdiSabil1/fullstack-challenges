@@ -137,6 +137,22 @@ createApp({
 ```html
 <input type="checkbox" v-bind:checked="theDoneBooleanGoesHere">
 ```
+
+例如，如果你有这样的数据：
+```javascript
+data() {
+  return {
+    username: "alice"
+  }
+}
+```
+
+你可以将它绑定到文本输入框的值：
+```html
+<input type="text" v-bind:value="username">
+```
+
+同样地，对于复选框，你使用布尔值绑定到`checked`。现在思考一下如何访问列表中每个待办事项的布尔值！
 </details>
 
 #### v-cloak 🧥

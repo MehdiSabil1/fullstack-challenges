@@ -138,6 +138,22 @@ Nous pouvons utiliser [`v-bind`] (https://vuejs.org/api/built-in-directives.html
 ```html
 <input type="checkbox" v-bind:checked="theDoneBooleanGoesHere">
 ```
+
+Par exemple, si tu avais des données comme ceci :
+```javascript
+data() {
+  return {
+    username: "alice"
+  }
+}
+```
+
+Tu pourrais les lier à la valeur d'un champ de texte :
+```html
+<input type="text" v-bind:value="username">
+```
+
+De même, pour une case à cocher, tu lies à `checked` avec une valeur booléenne. Maintenant, réfléchis à comment accéder à la valeur booléenne pour chaque élément de ta liste de tâches !
 </details>
 
 #### v-cloak 🧥

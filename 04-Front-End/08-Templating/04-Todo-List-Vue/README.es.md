@@ -139,6 +139,22 @@ Podemos usar [`v-bind`](https://vuejs.org/api/built-in-directives.html#v-bind) p
 <input type="checkbox" v-bind:checked="theDoneBooleanGoesHere" />
 ```
 
+Por ejemplo, si tuvieras datos como estos:
+```javascript
+data() {
+  return {
+    username: "alice"
+  }
+}
+```
+
+Podrías vincularlos al valor de un campo de texto:
+```html
+<input type="text" v-bind:value="username">
+```
+
+De manera similar, para una casilla de verificación, vinculas a `checked` con un valor booleano. ¡Ahora piensa en cómo acceder al valor booleano para cada elemento de tu lista de tareas!
+
 </details>
 
 #### v-cloak 🧥

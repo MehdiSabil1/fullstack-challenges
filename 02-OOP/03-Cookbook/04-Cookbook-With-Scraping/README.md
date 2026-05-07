@@ -1,6 +1,6 @@
 ⚠️ There's **no `rake`** for this exercise. Sorry 😉
 
-Our goal in this challenge is to enhance our existing cookbook, coded in the previous challenge, by finding recipes online. We will use [allrecipes](https://www.allrecipes.com), because their markup structure is pretty clean (making them good candidates for scraping). If you want to choose another recipe website, please go ahead! It just needs to have a **search** feature where the search keywords are passed in the [query string](https://en.wikipedia.org/wiki/Query_string).
+Our goal in this challenge is to enhance our existing cookbook, coded in the previous challenge, by finding recipes online. We will use [recipes.lewagon.com](https://recipes.lewagon.com). If you want to choose another recipe website, please go ahead! It just needs to have a **search** feature where the search keywords are passed in the [query string](https://en.wikipedia.org/wiki/Query_string).
 
 ## Setup
 
@@ -22,7 +22,7 @@ ruby lib/app.rb
 
 ## Import recipes from the web
 
-You can scrape from any recipe website that you know, but a good one is [allrecipes](https://www.allrecipes.com). Here's how this feature should work:
+You can scrape from any recipe website that you know, but a good one is [recipes.lewagon.com](https://recipes.lewagon.com). Here's how this feature should work:
 
 ```bash
 -- My CookBook --
@@ -63,17 +63,14 @@ For this new **user action** (hence new _route_), we need to:
 
 ### Analyze the page markup
 
-First, let's have a look at how we'll retrieve information from the Web.
+First, let's have a look at how we'll retrieve information from the Web. Use [Nokogiri](https://nokogiri.org/) with `open-uri` to fetch and parse the HTML from a given URL:
 
-You can download an HTML document on your computer with the `curl` command. Get the following HTML page saved as a `.html` file in your working directory by running this command in your terminal:
-
-```bash
-curl --silent "https://www.allrecipes.com/search?q=strawberry" > strawberry.html
+```ruby
+require "nokogiri"
+require "open-uri"
+url = "https://recipes.lewagon.com/?query=strawberry"
+doc = Nokogiri::HTML.parse(URI.parse(url).read, nil, "utf-8")
 ```
-
-👆 **This step is really important**!
-
-The reason why we keep the page on our hard drive is that we need to run Ruby scripts over it hundreds of times to test our code. It's much faster to open the file on disk rather than making a network call to allrecipes every time (that would probably also get you banned).
 
 ### Parsing with Nokogiri
 
@@ -89,34 +86,11 @@ For instance, if you want to find all elements with the `student` class in the f
 </ul>
 ```
 
-You can use the following boilerplate code to start:
-
-```ruby
-require "nokogiri"
-file = "strawberry.html"
-doc = Nokogiri::HTML.parse(File.open(file), nil, "utf-8")
-
-# Up to you to find the relevant CSS query.
-```
-
 You can work in a temporary file -- `parsing.rb` for instance -- to find the right selectors and the Ruby code to get all the data you want to extract from the HTML. You can start by just displaying the information extracted with `puts`. Once you found all the selectors you need, go on and code the action in your cookbook.
 
 For today you will be using the Nokogiri `.search()` method, which takes a CSS selector as a parameter.
 
 If you don't remember the syntax have a look at [our dedicated cheatsheet](https://kitt.lewagon.com/knowledge/cheatsheets/nokogiri).
-
-### Get response HTML data using `open-uri`
-
-Time to use your parsing code on a live URL with different queries (not just `strawberry`). Use the [open-uri](https://ruby-doc.org/core/stdlibs/open-uri/OpenURI.html) library to get the HTML response from a given URI:
-
-```ruby
-require "nokogiri"
-require "open-uri"
-url = "http://the_url_here"
-doc = Nokogiri::HTML.parse(URI.parse(url).read, nil, "utf-8")
-
-# Rest of the code
-```
 
 ### `Controller` / `View` / `Router`
 
@@ -161,7 +135,7 @@ Again, this new property should be:
 Try to extract the **parsing** logic out of the controller and put it into a [**Service Object**](https://www.toptal.com/ruby-on-rails/rails-service-objects-tutorial):
 
 ```ruby
-class ScrapeAllrecipesService
+class ScrapeRecipesService
   def initialize(keyword)
     @keyword = keyword
   end

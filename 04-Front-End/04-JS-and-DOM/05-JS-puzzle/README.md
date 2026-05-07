@@ -49,7 +49,7 @@ We want to move the tile in the callback, but first we’ve got to check if the 
 Let’s implement the function `canMove` to check if a tile has an empty space next to it.
 This function should take 1 parameter - the tile itself.
 
-To check if a tile has an empty space next to it you might want to take a look at the [cellIndex](http://help.dottoro.com/ljputote.php) and the [rowIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/rowIndex) to calculate the position of the tile.
+To check if a tile has an empty space next to it you might want to take a look at the [cellIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/cellIndex) and the [rowIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/rowIndex) to calculate the position of the tile.
 Be careful if you need to call these methods on a `tr` or a `td`!
 
 ## Move the tile

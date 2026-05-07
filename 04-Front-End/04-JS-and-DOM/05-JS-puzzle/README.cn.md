@@ -39,7 +39,7 @@ tiles.forEach((tile) => {
 
 让我们实现`canMove`函数来检查拼图是否有一个空的空间在它旁边。这个函数应该有一个参数——拼图本身。
 
-要检查拼图是否有一个空的空间在它旁边，你可能想看一下[cellIndex](http://help.dottoro.com/ljputote.php)和[rowIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/rowIndex)来计算拼图的位置。
+要检查拼图是否有一个空的空间在它旁边，你可能想看一下[cellIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/cellIndex)和[rowIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/rowIndex)来计算拼图的位置。
 
 如果你需要在`tr`或`td`上调用这些方法，请小心！
 

@@ -41,7 +41,6 @@ Maintenant, construisons un programme interactif simple qui utilise la méthode 
 Ouvre le fichier `interface.rb` et assure-toi d’y appeler la méthode `wagon_sort`. L’affichage doit être correctement formaté :
 - les noms séparés par des virgules (`, `),
 - sauf les deux derniers, séparés par `and`,
-- et noms doivent également être présentés sur une nouvelle ligne.
 
 Elle doit fonctionner comme ceci :
 

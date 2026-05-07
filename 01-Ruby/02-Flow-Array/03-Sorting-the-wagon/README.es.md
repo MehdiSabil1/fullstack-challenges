@@ -33,7 +33,7 @@ No te preocupes por construir la interfaz todavía; eso vendrá más tarde. Por 
 
 Ahora, construyamos un programa interactivo simple que use el método `wagon_sort`. El programa solicitará al usuario que ingrese nombres de estudiantes uno por uno, y cuando el usuario haya terminado, mostrará la lista ordenada de nombres.
 
-Abre el archivo `interface.rb` y asegúrate de usar el método `wagon_sort`. La interfaz debe tener una output estilizada. Los nombres deben estar separados por comas (`, `) excepto los dos últimos que deben estar separados por la palabra `and`. Los nombres también deben estar en una nueva línea.
+Abre el archivo `interface.rb` y asegúrate de usar el método `wagon_sort`. La interfaz debe tener una output estilizada. Los nombres deben estar separados por comas (`, `) excepto los dos últimos que deben estar separados por la palabra `and`.
 
 Debe funcionar de la siguiente manera:
 

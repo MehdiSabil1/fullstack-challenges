@@ -41,7 +41,7 @@ Nous souhaitons déplacer la pièce dans le callback, mais avant tout nous devon
 Implémentons la fonction `canMove` pour vérifier si une pièce a un espace vide à côté d'elle.
 Cette fonction doit prendre 1 paramètre - la pièce elle-même.
 
-Pour vérifier si une pièce a un espace vide à côté d'elle, tu peux regarder le [cellIndex](http://help.dottoro.com/ljputote.php) et le [rowIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/rowIndex) pour calculer la position de la pièce.
+Pour vérifier si une pièce a un espace vide à côté d'elle, tu peux regarder le [cellIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/cellIndex) et le [rowIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/rowIndex) pour calculer la position de la pièce.
 Fais attention si tu as besoin d'appeler ces méthodes sur un `tr` ou un `td`!
 
 ## Déplacer la pièce

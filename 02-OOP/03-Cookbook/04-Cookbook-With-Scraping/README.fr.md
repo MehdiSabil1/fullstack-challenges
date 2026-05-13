@@ -1,6 +1,6 @@
 ⚠️ Il n’y a **pas de `rake`** pour cet exercice. Désolé 😉
 
-On va maintenant essayer d’améliorer l’application avec des recettes en ligne. Pour cela, on va utiliser [allrecipes](https://www.allrecipes.com), car la structure de balisage du site est plutôt soignée, ce qui en fait un bon candidat pour le scraping. Si tu préfères utiliser un autre site Web de recettes, pas de problème ! Il doit simplement posséder une fonction de **recherche**, où les mots-clés recherchés passent dans la [chaîne de requête](https://en.wikipedia.org/wiki/Query_string).
+On va maintenant essayer d’améliorer l’application avec des recettes en ligne. Pour cela, on va utiliser [recipes.lewagon.com](https://recipes.lewagon.com). Si tu préfères utiliser un autre site Web de recettes, pas de problème ! Il doit simplement posséder une fonction de **recherche**, où les mots-clés recherchés passent dans la [chaîne de requête](https://en.wikipedia.org/wiki/Query_string).
 
 ## Configuration
 
@@ -22,7 +22,7 @@ ruby lib/app.rb
 
 ## Importer des recettes depuis le Web
 
-Tu peux scraper n’importe quel site Web que tu connais, mais [allrecipes](https://www.allrecipes.com) est plutôt pas mal. Cette fonctionnalité devrait fonctionner comme suit :
+Tu peux scraper n’importe quel site Web que tu connais, mais [recipes.lewagon.com](https://recipes.lewagon.com) est plutôt pas mal. Cette fonctionnalité devrait fonctionner comme suit :
 
 ```bash
 -- My CookBook --
@@ -63,21 +63,18 @@ Pour cette nouvelle **action utilisateur** (et donc cette nouvelle _route_), on 
 
 ### Analyser le balisage de la page
 
-Commence par réfléchir à la façon dont tu vas récupérer les informations du Web.
+Commence par réfléchir à la façon dont tu vas récupérer les informations du Web. Utilise [Nokogiri](https://nokogiri.org/) avec la bibliothèque `open-uri` pour obtenir la réponse HTML d’une URL donnée :
 
-Tu peux télécharger un document HTML sur ton ordinateur avec la commande `curl`. Récupère la page HTML suivante enregistrée en tant que fichier `.html` dans ton répertoire de travail en exécutant cette commande dans ton terminal :
-
-```bash
-curl --silent "https://www.allrecipes.com/search?q=strawberry" > strawberry.html
+```ruby
+require "nokogiri"
+require "open-uri"
+url = "https://recipes.lewagon.com/?query=strawberry"
+doc = Nokogiri::HTML.parse(URI.parse(url).read, nil, "utf-8")
 ```
-
-👆 **Cette étape est très importante** !
-
-Conserve la page sur ton disque dur, car tu auras besoin d’exécuter des scripts Ruby dessus plusieurs centaines de fois pour tester ton code et il est beaucoup plus rapide d’ouvrir le fichier sur le disque que de demander au réseau d’appeler allrecipes à chaque fois (ce qui te vaudrait sans doute d’être banni en plus de ça).
 
 ### Parser avec Nokogiri
 
-Nokogiri est une gem utile et bien connue, qui sert à parser des documents HTML (mais elle ne fait pas que ça !) Voici comment tu peux l’utiliser pour parser un document une fois que tu connais les sélecteurs CSS des éléments qui t’intéressent. On abordera les sélecteurs CSS plus tard, mais grosso modo, ils permettent de sélectionner tous les éléments d’un attribut de `class` donné en créant la requête `.class`.
+Nokogiri est une gem utile et bien connue, qui sert à parser des documents HTML (mais elle ne fait pas que ça !) Voici comment tu peux l’utiliser pour parser un document une fois que tu connais les sélecteurs CSS des éléments qui t’intéressent. On abordera les sélecteurs CSS plus tard, mais grosso modo, ils permettent de sélectionner tous les éléments d’un attribut de `class` donné en créant la requête `.class`.
 
 Par exemple, si on veut trouver tous les éléments de la classe `student` dans le document HTML suivant, on utilisera la requête `".student"`
 
@@ -89,34 +86,11 @@ Par exemple, si on veut trouver tous les éléments de la classe `student` dans 
 </ul>
 ```
 
-Tu peux utiliser le code suivant comme modèle pour commencer :
-
-```ruby
-require "nokogiri"
-file = "strawberry.html"
-doc = Nokogiri::HTML.parse(File.open(file), nil, "utf-8")
-
-# À toi de trouver la requête CSS pertinente.
-```
-
 Tu peux travailler dans un fichier temporaire -- `parsing.rb` par exemple -- pour trouver les bons sélecteurs et le code Ruby pour obtenir toutes les données que tu veux extraire du contenu HTML. Tu peux commencer par afficher simplement les informations extraites avec `puts`. Une fois que tu as trouvé tous les sélecteurs dont tu as besoin, code l’action dans ton cookbook.
 
 Aujourd’hui, tu vas utiliser la méthode Nokogiri `.search()`, qui prend un sélecteur CSS comme paramètre.
 
 Si tu ne te souviens pas de la syntaxe, jette un œil à [notre antisèche](https://kitt.lewagon.com/knowledge/cheatsheets/nokogiri).
-
-### Récupérer des données HTML avec `open-uri`
-
-Le moment est venu d’utiliser ton code de parsing sur une URL en ligne avec différentes requêtes (pas seulement `strawberry`). Utilise la bibliothèque [open-uri](https://ruby-doc.org/core/stdlibs/open-uri/OpenURI.html) pour obtenir la réponse HTML d’une URL donnée :
-
-```ruby
-require "nokogiri"
-require "open-uri"
-url = "http://the_url_here"
-doc = Nokogiri::HTML.parse(URI.parse(url).read, nil, "utf-8")
-
-# Reste du code
-```
 
 ### `Controller` / `View` / `Router`
 
@@ -161,7 +135,7 @@ Cette nouvelle propriété doit également être :
 Essaie d’extraire la logique de **parsing** du contrôleur et de la placer dans un [**Service Object**](https://www.toptal.com/ruby-on-rails/rails-service-objects-tutorial) :
 
 ```ruby
-class ScrapeAllrecipesService
+class ScrapeRecipesService
  def initialize(keyword)
  @keyword = keyword
  end

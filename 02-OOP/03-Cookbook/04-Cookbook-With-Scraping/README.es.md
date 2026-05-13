@@ -1,6 +1,6 @@
 ⚠️ **No hay `rake`** para este ejercicio. Lo siento 😉
 
-Ahora queremos mejorar nuestro recetario (cookbook) con recetas de internet. Usaremos [🇬🇧 allrecipes](https://www.allrecipes.com), porque el lenguaje de marcado (markup) que tienen es bastante claro (lo que las hace buenas candidatas para scraping). Si quieres escoger otra página web de recetas, ¡no hay problema!. Solo debe tener la funcionalidad de **búsqueda** donde se pasen palabras clave en la cadena de consulta [query string](https://en.wikipedia.org/wiki/Query_string).
+Ahora queremos mejorar nuestro recetario (cookbook) con recetas de internet. Usaremos [recipes.lewagon.com](https://recipes.lewagon.com). Si quieres escoger otra página web de recetas, ¡no hay problema!. Solo debe tener la funcionalidad de **búsqueda** donde se pasen palabras clave en la cadena de consulta [query string](https://en.wikipedia.org/wiki/Query_string).
 
 ## Configuración
 
@@ -22,7 +22,7 @@ ruby lib/app.rb
 
 ## Importar recetas de la web
 
-Puedes hacer el scraping de cualquier página web que conozcas pero una buena es [allrecipes](https://www.allrecipes.com). Así es como debería funcionar esta funcionalidad:
+Puedes hacer el scraping de cualquier página web que conozcas pero una buena es [recipes.lewagon.com](https://recipes.lewagon.com). Así es como debería funcionar esta funcionalidad:
 
 ```bash
 -- My CookBook --
@@ -63,17 +63,14 @@ Para esta nueva **acción de usuario** (por eso el new _route_), necesitamos lo 
 
 ### Análisis del lenguaje de marcado (markup) de la página
 
-Primero veamos cómo recuperaremos información de la web.
+Primero veamos cómo recuperaremos información de la web. Usa [Nokogiri](https://nokogiri.org/) con `open-uri` para obtener y parsear el HTML de una URL dada:
 
-Es posible descargar un documento HTML en tu computadora con el comando `curl`. Obtén la siguiente página HTML que está guardada como un archivo `.html` en tu directorio de trabajo corriendo uno de estos dos comandos en la Terminal:
-
-```bash
-curl --silent "https://www.allrecipes.com/search?q=strawberry" > strawberry.html
+```ruby
+require "nokogiri"
+require "open-uri"
+url = "https://recipes.lewagon.com/?query=strawberry"
+doc = Nokogiri::HTML.parse(URI.parse(url).read, nil, "utf-8")
 ```
-
-👆 ¡**Este paso es muy importante**!
-
-La razón por la cual mantenemos la página en nuestro disco duro es porque tenemos que correr scripts Ruby en ella cientos de veces para testear nuestro código. Es más rápido abrir el archivo que está en el disco duro que hacer que nuestra red llame a allrecipes cada vez (esto probablemente hará que te veten de la página).
 
 ### Parseo con Nokogiri
 
@@ -89,34 +86,11 @@ Por ejemplo, si quieres encontrar todos los elementos con la clase `student` en 
 </ul>
 ```
 
-Puedes usar el siguiente código como plantilla para empezar:
-
-```ruby
-require "nokogiri"
-file = "strawberry.html"
-doc = Nokogiri::HTML.parse(File.open(file), nil, "utf-8")
-
-# Up to you to find the relevant CSS query.
-```
-
 Puedes trabajar en un archivo temporal como `parsing.rb` para encontrar los selectores adecuados y el código Ruby para obtener todos los datos que quieres extraer del HTML. Puedes comenzar simplemente mostrando la información extraída con `puts`. Una vez que hayas encontrado todo los selectores que necesites puedes comenzar a escribir el código de la acción en tu recetario.
 
 Hoy usarás el método Nokogiri `.search()` el cual toma un selector CSS como parámetro.
 
 Si no recuerdas la sintaxis, échale un vistazo a [nuestra chuleta](https://kitt.lewagon.com/knowledge/cheatsheets/nokogiri).
-
-### Obtención de datos HTML con `open-uri`
-
-Es hora de usar tu código de parseo en una URL en línea con consultas diferentes (no solamente con `[fraise|strawberry]`). Usa la librería [open-uri](https://ruby-doc.org/core/stdlibs/open-uri/OpenURI.html) para obtener la respuesta HTML de una URL dada:
-
-```ruby
-require "nokogiri"
-require "open-uri"
-url = "http://the_url_here"
-doc = Nokogiri::HTML.parse(URI.parse(url).read, nil, "utf-8")
-
-# Rest of the code
-```
 
 ### `Controller` / `View` / `Router`
 
@@ -163,7 +137,7 @@ Esta nueva propiedad también debe ser:
 Intenta extraer la lógica de **parseo** del controlador y de ponerla en un [**Service Object**](https://www.toptal.com/ruby-on-rails/rails-service-objects-tutorial):
 
 ```ruby
-class ScrapeAllrecipesService
+class ScrapeRecipesService
   def initialize(keyword)
     @keyword = keyword
   end

@@ -25,9 +25,9 @@ Commence par générer une nouvelle migration pour créer le modèle `User`. Le 
 
 ### Migration : un User a plusieurs posts
 
-Génère une autre migration pour créer des références one-to-many entre `User` et `Post`.
+Tu dois maintenant lier les posts aux utilisateurs. Génère une nouvelle migration pour ajouter une clé étrangère `user_id` à la table `posts` existante (conseil : tu mets à jour une table existante, tu n’en crées pas une nouvelle à partir de zéro. Relis la section "Adding a foreign key" du cours d’aujourd’hui).
 
-Pense à ajouter le code dans tes modèles pour pouvoir accéder à des posts depuis une instance utilisateur, et à l’utilisateur depuis une instance de post donnée.
+Mets ensuite à jour les deux fichiers de modèles pour déclarer l’association, de façon à pouvoir appeler `user.posts` et `post.user`.
 
 ### Alimenter avec des utilisateurs et des posts
 

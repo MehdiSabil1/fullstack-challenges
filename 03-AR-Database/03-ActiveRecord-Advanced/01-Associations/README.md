@@ -25,9 +25,9 @@ First generate a new migration to create the `User` model. The model should have
 
 ### Migration: a User has many posts
 
-Generate another migration to create a one-to-many reference between `User` and `Post`.
+Now you need to link posts to users. Generate a new migration to add a `user_id` foreign key to the existing `posts` table (Hint: you're updating an existing table, not creating a new one from scratch. Look back at the "Adding a foreign key" section of today's lecture).
 
-Make sure you add the code in your models to allow you to access posts from a user instance, and the user from a given post instance.
+Then update both model files to declare the association, so that you can call `user.posts` and `post.user`.
 
 ### Seed with user and posts
 

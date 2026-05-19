@@ -26,9 +26,9 @@ Primero genera la nueva migración para crear el modelo del usuario (`User`). Di
 
 ### Migración: un usuario (User) tiene muchos (has many) posts
 
-Genera otra migración para crear una referencia uno a muchos (one-to-many) entre el usuario (`User`) y el post (`Post`).
+Ahora necesitas vincular los posts a los usuarios. Genera una nueva migración para agregar una clave foránea `user_id` a la tabla `posts` existente (pista: estás actualizando una tabla existente, no creando una nueva desde cero. Vuelve a revisar la sección "Adding a foreign key" del curso de hoy).
 
-Asegúrate de agregar el código necesario en tus modelos para darte acceso a los posts desde una instancia de usuario y al usuario a partir de una instancia de post dada.
+Luego actualiza los dos archivos de modelos para declarar la asociación, de modo que puedas llamar a `user.posts` y `post.user`.
 
 ### Seed con usuario y posts
 

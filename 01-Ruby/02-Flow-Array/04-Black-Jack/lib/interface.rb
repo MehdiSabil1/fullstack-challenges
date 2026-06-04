@@ -20,7 +20,7 @@ while loop
     puts state_of_the_game(player_score, bank_score)
     loop = player_score < 21
   else
-    lopp = false
+    loop = false
   end
 end
 #if the player does not want a new card, end the game and print the final message

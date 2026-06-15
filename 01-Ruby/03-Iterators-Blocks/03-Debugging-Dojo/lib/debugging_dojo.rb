@@ -6,7 +6,7 @@
 # Can you help me out?
 def double_number(number)
   # This method is supposed to double the input number
-  numer * 2
+  number * 2
 end
 
 # Ok, thanks so much!
@@ -14,20 +14,18 @@ end
 # I have the right idea, but I can't seem to get the syntax right.
 def double_array(numbers)
   # This method is supposed to double each number in the array
-  numbers.map do
-    number * 2
-  end
+  numbers.map { |number| number * 2 }
 end
 
 # Next up, I'm really stumped on this one:
 def capitalize_words_starting_with_a(string)
   # This method is supposed to capitalize words that start with 'a'
   processed_words = []
-  string.split.for_each do
-    if start_with?(word, 'a')
-      word.capitalize
+  string.split.each do |word|
+    if word.start_with?('a')
+      processed_words << word.capitalize
     else
-      word
+      processed_words << word
     end
   end
   return processed_words.join(' ')
